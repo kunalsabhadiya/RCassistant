@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".adduser">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbarcolor">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back2"
+                    android:id="@+id/back"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Add Users"
+                    android:layout_toEndOf="@+id/back"
+                    android:layout_marginStart="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            android:layout_below="@+id/appbar"
+            >
+            <Button
+                android:id="@+id/addcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Select from Contacts"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/toolbarcolor"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="----------OR----------"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#3F637C"
+                android:layout_marginBottom="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Relation with user"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                />
+            <Spinner
+                android:id="@+id/relation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textboxbg"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                />
+
+
+                <EditText
+                    android:padding="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/statusbarcolor"
+                    android:background="@drawable/textboxbg"
+                    android:textSize="16sp"
+                   />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Phone number"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                />
+            <EditText
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/statusbarcolor"
+                android:background="@drawable/textboxbg"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Password which you set in RSController App"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                />
+            <EditText
+                android:padding="8dp"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Optional"
+                android:textColor="@color/statusbarcolor"
+                android:background="@drawable/textboxbg"
+                android:textSize="16sp"
+                />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/toolbarcolor"
+                android:text="Save &amp; Continue"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>

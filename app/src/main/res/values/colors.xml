@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="statusbarcolor">#0e2e43</color>
+    <color name="toolbarcolor">#143d59</color>
+    <color name="textcolor">#143d59</color>
+    <color name="msgprofilecolor">#b8c5cd</color>
+    <color name="seekbarfullcolor">#74858f</color>
+    <color name="seekbaremptycolor">#d2d2d2</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="selecteditemcolor">#92C9F5</color>
+</resources>

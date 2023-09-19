@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img"
+        android:src="@drawable/wifi"
+        />
+    <TextView
+        android:id="@+id/commandname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/toolbarcolor"
+        android:text="Wi-Fi"
+        android:layout_toEndOf="@+id/img"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/validornot"
+            android:src="@drawable/right"
+            android:layout_alignParentEnd="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commandname"
+            android:layout_toEndOf="@+id/img"
+            android:layout_marginStart="10dp"
+            >
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Enable wifi"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/toolbarcolor"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="disable wifi"
+            android:layout_below="@+id/btn1"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/toolbarcolor"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="disable wifi"
+            android:layout_below="@+id/btn2"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/toolbarcolor"
+            android:textAllCaps="false"
+
+            />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="disable wifi"
+            android:layout_below="@+id/btn3"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/toolbarcolor"
+            android:textAllCaps="false"
+
+            />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</ScrollView>
